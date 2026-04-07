@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="dashboard">
+      <header class="dashboard-header">
+        <div class="dashboard-header__user-nav">
+          <img
+            src="/images/image-jeremy.png"
+            alt="Jeremy's avatar"
+            class="dashboard-header__avatar"
+          />
+          <div class="dashboard-header__details">
+            <span>Report for </span>
+            <h2>Jeremy Robson</h2>
+          </div>
+        </div>
+        <nav>
+          <ul class="dashboard-header__menu">
+            <li data-label="daily">Daily</li>
+            <li data-active="true" data-label="weekly">Weekly</li>
+            <li data-label="monthly">Monthly</li>
+          </ul>
+        </nav>
+      </header>
+    </main>
+
+    <!-- dashboard card template -->
+    <template id="dashboard-card-template">
+      <section class="dashboard-card">
+        <div
+          class="dashboard-card__illustration"
+          role="presentation"
+          aria-hidden="true"
+        >
+          <img src="/images/icon-study.svg" alt="" role="presentation" />
+        </div>
+        <div class="dashboard-card__content">
+          <header>
+            <h3 class="dashboard-card__category">Work</h3>
+            <button class="dashboard-card__btn">
+              <img src="/images/icon-ellipsis.svg" alt="" role="presentation" />
+            </button>
+          </header>
+          <div class="dashboard-card__stat">5hrs</div>
+          <footer>
+            <span class="dashboard-card__stat-old"> Last week - 36hrs </span>
+          </footer>
+        </div>
+      </section>
+    </template>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
