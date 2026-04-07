@@ -7,7 +7,8 @@ function handleMenuItemsInteraction() {
 
   Array.from(dashboardMenu.children).forEach((menuItem, i, self) => {
     const handleMenuItemClick = (e) => {
-      const target = e.target;
+      e.preventDefault();
+      const target = e.currentTarget;
       const label = target.getAttribute("data-label");
       target.setAttribute("data-active", "true");
       state.selectedView = label;

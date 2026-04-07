@@ -38,9 +38,15 @@
         </div>
         <nav>
           <ul class="dashboard-header__menu">
-            <li data-label="daily">Daily</li>
-            <li data-active="true" data-label="weekly">Weekly</li>
-            <li data-label="monthly">Monthly</li>
+            <li data-label="daily">
+              <a href="#daily"> Daily </a>
+            </li>
+            <li data-active="true" data-label="weekly">
+              <a href="#weekly"> Weekly </a>
+            </li>
+            <li data-label="monthly">
+              <a href="#monthly"> Monthly </a>
+            </li>
           </ul>
         </nav>
       </header>
@@ -59,7 +65,7 @@
         <div class="dashboard-card__content">
           <header>
             <h3 class="dashboard-card__category">Work</h3>
-            <button class="dashboard-card__btn">
+            <button class="dashboard-card__btn" aria-label="Expand actions">
               <img src="/images/icon-ellipsis.svg" alt="" role="presentation" />
             </button>
           </header>
